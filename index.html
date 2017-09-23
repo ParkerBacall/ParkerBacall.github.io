@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <script type="text/javascript" src="jquery-3.1.1.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head> 
+  <title> PARKER </title>
+  </head>
+  
+ <body>
+
+
+ <div class='phoneHeader desktopHeader'>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">&#9776;
+  </button>
+
+
+  <div id="myDropdown" class="dropdown-content">
+  
+    <a href="art.html">
+portfolio
+    </a>
+    <a href="bio.html">
+bio
+    </a>
+    <a href="contact.html">
+contact
+    </a>
+  
+
+<button class="scrollbtn" onclick="plusDivs(1)">&#10095;</button>
+
+  <button class="scrollbtn" onclick="plusDivs(-1)">&#10094;</button>
+</div>
+
+
+
+
+
+<a class ='phoneName desktopName'>Parker Bacall
+</a>
+
+<div class="art art2">
+  <img class="mySlides" src="images/dino.png" style="width:100%">
+  <img class="mySlides" src="images/skater.png" style="width:100%">
+  <img class="mySlides" src=" images/SandDunes_4.png " style="width:100%">
+  <img class="mySlides" src=" images/shot.png " style="width:100%">
+</div>
+
+<script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "inline-block";  
+}
+</script>
+</body>
+</html>
+
