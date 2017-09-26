@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html>
+
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script src="js/script.js"></script>
 <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,60 +13,93 @@
   </head>
   
 
-<div class="backBTN">
-<h1 class="bigarrow">
-  <a href="index.html">
-  &#10094;
-</h1>
-</a>
-<h1>Parker's Art</h1>
+<div class='phoneHeader desktopHeader'>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">&#9776;
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">
+home
+    </a>
+    <a href="bio.html">
+bio
+    </a>
+    <a href="contact.html">
+contact
+    </a>
+  </div>
 </div>
+
+<a class ='phoneName desktopName'>Parker's art
+</a>
+</div>
+
 
 <div class="flex-grid">
 
-<div class= "col"><a href="GlitchOF.html"><img class ="image" src="images/glitch1.png">
+<div class= "col"><a href="GlitchOF.html"><img class ="image" src="images/glitch1.png"> OF glitch
 </a></div> 
 
-<div class= "col"><a href="Landscapes.html"><img class ="image" src="images/Landscape3.png">
+<div class= "col"><a href="Landscapes.html"><img class ="image" src="images/Landscape3.png"> Landscapes
 </a></div> 
 
-<div class= "col"><a href="icons.html"><img class ="image" src="images/Brain.png">
+<div class= "col"><a href="icons.html"><img class ="image" src="images/Brain.png"> Icons
 </a></div> 
 
-<div class= "col"><a href="OpenCV.html"><img class ="image" src="images/face.png">
+<div class= "col"><a href="OpenCV.html"><img class ="image" src="images/face.png"> CV glitch
 </a></div> 
 
-<div class= "col"><a href="Collages.html"><img class ="image" src="images/trash.PNG">
-</a></div> 
-
-
-<div class= "col"><a href="c4dstill.html"><img class ="image" src="images/over.png">
-</a></div> 
-
-<div class= "col"><a href="Animations.html"><img class ="image" src="images/skater.png">
+<div class= "col"><a href="Collages.html"><img class ="image" src="images/trash.PNG"> Collages
 </a></div> 
 
 
-<div class= "col"><a href="pixel.html"><img class ="image" src="images/star.png">
+<div class= "col"><a href="c4dstill.html"><img class ="image" src="images/over.png"> c4d stills
+</a></div> 
+
+<div class= "col"><a href="Animations.html"><img class ="image" src="images/skater.png"> animations
 </a></div> 
 
 
-<div class= "col"><a href="pioneer.html"><img class ="image" src="images/tree.png">
+<div class= "col"><a href="pixel.html"><img class ="image" src="images/star.png"> pixelPartices
 </a></div> 
 
 
-<div class= "col"><a href="meta.html"><img class ="image" src="images/Meta1.PNG">
+<div class= "col"><a href="pioneer.html"><img class ="image" src="images/tree.png"> pioneer
 </a></div> 
 
 
-<div class= "col"><a href="maya.html"><img class ="image" src="images/maya1.jpeg">
+<div class= "col"><a href="meta.html"><img class ="image" src="images/Meta1.PNG"> Meta Office
 </a></div> 
 
-<div class= "col"><a href="doodle.html"><img class ="image" src="images/block.JPG">
+
+<div class= "col"><a href="maya.html"><img class ="image" src="images/maya1.jpeg"> 3d Modeling
+</a></div> 
+
+<div class= "col"><a href="doodle.html"><img class ="image" src="images/block.JPG"> doodles
 </a></div> 
 
 </body>
-  
+  <script type="text/javascript">
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 
   </html>
   
