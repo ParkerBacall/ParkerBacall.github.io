@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<head> 
+  <title> PARKER </title>
+  </head>
+  
+  
+
+
+<div class="backBTN">
+<h1 class="bigarrow">
+  <a href="art.html">
+  &#10094;
+</h1>
+</a>
+</div>
+
+<h1 class="title"> C4d Animations</h1>
+
+
+<button class="scrollbtn" onclick="plusDivs(1)">&#10095;</button>
+  <button class="scrollbtn" onclick="plusDivs(-1)">&#10094;</button>
+
+
+  <p class= infoA> Animations made using Cinema 4d, 3d Videos, Depth scans, and Photogrametry </p>
+
+<div class="artP">
+
+<iframe class=mySlides src="https://player.vimeo.com/video/235654005" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<iframe class=mySlides src="https://player.vimeo.com/video/235654043" width="640" height="380" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<iframe class=mySlides src="https://player.vimeo.com/video/235654071" width="640" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<iframe class=mySlides src="https://player.vimeo.com/video/235654048" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+</div>
+
+<footer>Parker Bacall&copy All rights reserved Parker Bacall 2017</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "inline-block";  
+}
+</script>
+
+</body>
+</html>
+
+  
