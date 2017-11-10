@@ -232,6 +232,7 @@ color: #B1ACB7;
 
 .image{
 width: 100%;
+  image-orientation: from-image;
 }
 
 }
