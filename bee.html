@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<head> 
+  <title>Bee Active</title>
+  </head>
+  
+  
+
+
+<div class="backbtn">
+<h1 class="bigarrow">
+  <a href="3d.html">
+  &#10094;
+</h1>
+</a>
+</div>
+
+<h1 class="title"> Bee Active</h1>
+
+
+<button class="scrollbtn" onclick="plusDivs(1)">&#10095;</button>
+  <button class="scrollbtn" onclick="plusDivs(-1)">&#10094;</button>
+
+  <p class= infoA > Interactive piece visualizing bee decline due to pesticide usage. As viewers get close and involoved with the issue a photosensor triggers the bees return and music shifts in mood. Collaborative work where I speacilized in Photogrametry, max patching, working with sensors via arduino and max.
+
+<div class="artP">
+
+<iframe class=mySlides src="https://giphy.com/embed/T9ISoYnWe985vYVnE5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+
+<iframe class=mySlides src="https://giphy.com/embed/YlTyMhkRraAsSmfw38" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+<img class="mySlides" src="images/bee/bee0.jpg" style="width:75%">
+
+<img class="mySlides" src="images/bee/bee1.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee2.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee3.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee4.jpg" style="width:75%">
+
+<img class="mySlides" src="images/bee/bee5.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee6.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee7.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee8.jpg" style="width:75%">
+
+
+<img class="mySlides" src="images/bee/bee9.jpg" style="width:75%">
+</div>
+
+
+<footer>Parker Bacall&copy All rights reserved Parker Bacall 2018</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "inline-block";  
+}
+</script>
+
+</body>
+</html>
+
+  
