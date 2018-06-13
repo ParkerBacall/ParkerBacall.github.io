@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<head> 
+  <title> saturday </title>
+  </head>
+  
+  
+
+
+<div class="backbtn">
+<h1 class="bigarrow">
+  <a href="print.html">
+  &#10094;
+</h1>
+</a>
+</div>
+
+<h1 class="title"> "Saturday"</h1>
+
+<p class= infoA> Dry Point Intaligo Prints, 2018 </p>
+
+
+<button class="scrollbtn" onclick="plusDivs(1)">&#10095;</button>
+  <button class="scrollbtn" onclick="plusDivs(-1)">&#10094;</button>
+
+
+<div class="artP">
+
+<img class="mySlides" src="images/Intaligo/saturday/sat.jpg" style="width:45%">
+
+
+<img class="mySlides" src="images/Intaligo/saturday/sat2.jpg" style="width:45%">
+
+<img class="mySlides" src="images/Intaligo/saturday/sat3.jpg" style="width:45%">
+
+<img class="mySlides" src="images/Intaligo/saturday/sat4.jpg" style="width:45%">
+
+
+<img class="mySlides" src="images/Intaligo/saturday/sat5.jpg" style="width:45%">
+<img class="mySlides" src="images/Intaligo/saturday/sat6.jpg" style="width:45%">
+
+<img class="mySlides" src="images/Intaligo/saturday/sat7.jpg" style="width:45%">
+
+<img class="mySlides" src="images/Intaligo/saturday/sat8.jpg" style="width:45 %">
+
+
+</div>
+
+<footer>Parker Bacall&copy All rights reserved Parker Bacall 2017</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "inline-block";  
+}
+</script>
+
+</body>
+</html>
+
+  
