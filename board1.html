@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<head> 
+  <title> Untitled Skater </title>
+  </head>
+  
+  
+
+
+<div class="backbtn">
+<h1 class="bigarrow">
+  <a href="paint.html">
+  &#10094;
+</h1>
+</a>
+</div>
+
+<h1 class="title"> "Untitled Skater"</h1>
+
+<p class= infoA>7.75"x 32", Spray Paint on Skate Deck, Exhibited in Abstract Denver's Skate Deck Art Show July 2018 </p>
+
+
+<button class="scrollbtn" onclick="plusDivs(1)">&#10095;</button>
+  <button class="scrollbtn" onclick="plusDivs(-1)">&#10094;</button>
+
+
+<div class="artP">
+
+<img class="mySlides" src="images/boards/blue.jpg" style="width:40%">
+
+<img class="mySlides" src="images/boards/red.png" style="width:37%">
+
+
+<img class="mySlides" src="images/boards/artwalk.png" style="width:50%">
+
+
+
+</div>
+
+<footer>Parker Bacall&copy All rights reserved Parker Bacall 2018</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "inline-block";  
+}
+</script>
+
+</body>
+</html>
+
+  
