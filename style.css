@@ -148,6 +148,7 @@ color: #ffffff;
 .dropdown {
 position: relative;
 display: inline-block;
+text-align: center;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -157,6 +158,7 @@ position: absolute;
 background-color: #f9f9f9;
 width: 200px;
 z-index: +1;
+
 }
 
 /* Links inside the dropdown */
@@ -167,6 +169,7 @@ font-size: 20px;
 font-weight: bold;
 text-decoration: none;
 display: block;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -181,7 +184,7 @@ color: #ffffff;
 position: fixed; 
 bottom: 10px;
 padding-left: 10px; 
-text-align: right;
+
 }
 }
 
